@@ -67,10 +67,7 @@ public class Koopa : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            float playerY = collision.transform.position.y;
-            float koopaY = transform.position.y;
-
-            if (playerY > koopaY + 0.2f)
+            if (collision.relativeVelocity.y < -0.5f)
             {
                 if (!inShell)
                     EnterShell();
@@ -79,8 +76,16 @@ public class Koopa : MonoBehaviour
                 else
                     StopShell();
             }
-
+            else
+            {
+                PlayerState ps = collision.gameObject.GetComponent<PlayerState>();
+                if (ps != null)
+                {
+                    ps.TakeDamage();
+                }
+            }
         }
+
         if (collision.gameObject.CompareTag("Enemy"))
         {
             if (isMovingShell && collision.gameObject != gameObject)

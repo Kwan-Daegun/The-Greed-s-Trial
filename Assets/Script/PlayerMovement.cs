@@ -24,24 +24,24 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-        
         moveInput = Input.GetAxisRaw("Horizontal");
         isRunning = Input.GetKey(KeyCode.LeftShift);
 
-       
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
 
-        
+        Vector3 scale = transform.localScale;
+
         if (moveInput > 0)
-            transform.localScale = new Vector3(1, 1, 1);
+            scale.x = Mathf.Abs(scale.x);
         else if (moveInput < 0)
-            transform.localScale = new Vector3(-1, 1, 1);
+            scale.x = -Mathf.Abs(scale.x);
+
+        transform.localScale = scale;
     }
 
     void FixedUpdate()
@@ -49,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
         float speed = isRunning ? runSpeed : walkSpeed;
         rb.linearVelocity = new Vector2(moveInput * speed, rb.linearVelocity.y);
     }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
