@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: 499096d7833cd794f998280243a6df36
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2693739628464077416
+    second: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_0
+  - first:
+      213: 7246192066643238427
+    second: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_1
+  - first:
+      213: 626988727054777159
+    second: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_2
+  - first:
+      213: -8932847768638942086
+    second: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_3
+  - first:
+      213: -116608160656291200
+    second: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_4
+  - first:
+      213: -1829299013983100464
+    second: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_5
+  - first:
+      213: 7198648528044077444
+    second: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_6
+  - first:
+      213: 5864525715171723077
+    second: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_7
+  - first:
+      213: 6348595515941280332
+    second: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_8
+  - first:
+      213: 2512042599457750501
+    second: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_9
+  - first:
+      213: -6917763036479302863
+    second: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_10
+  - first:
+      213: 3030847971117362121
+    second: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_11
+  - first:
+      213: -181440720900124927
+    second: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_12
+  - first:
+      213: -80779952600947154
+    second: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 800
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_0
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 600
+        width: 484
+        height: 582
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86a7ef78be5126520800000000000000
+      internalID: 2693739628464077416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_1
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 605
+        width: 471
+        height: 573
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e168aea45af8460800000000000000
+      internalID: 7246192066643238427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_2
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 602
+        width: 449
+        height: 569
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74b3642ece283b800800000000000000
+      internalID: 626988727054777159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_3
+      rect:
+        serializedVersion: 2
+        x: 2190
+        y: 763
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7492ad5846280480800000000000000
+      internalID: -8932847768638942086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_4
+      rect:
+        serializedVersion: 2
+        x: 2463
+        y: 771
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08a8b26ee79b16ef0800000000000000
+      internalID: -116608160656291200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_5
+      rect:
+        serializedVersion: 2
+        x: 2019
+        y: 608
+        width: 29
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d1a0932d360d96e0800000000000000
+      internalID: -1829299013983100464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_6
+      rect:
+        serializedVersion: 2
+        x: 2012
+        y: 586
+        width: 708
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 481b4f832bcb6e360800000000000000
+      internalID: 7198648528044077444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_7
+      rect:
+        serializedVersion: 2
+        x: 2649
+        y: 612
+        width: 64
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54744fcf01bf26150800000000000000
+      internalID: 5864525715171723077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_8
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 36
+        width: 519
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4a51564cfdba1850800000000000000
+      internalID: 6348595515941280332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_9
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 27
+        width: 515
+        height: 469
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5edf3515f619cd220800000000000000
+      internalID: 2512042599457750501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_10
+      rect:
+        serializedVersion: 2
+        x: 1991
+        y: 310
+        width: 104
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 133d2529b2b2fff90800000000000000
+      internalID: -6917763036479302863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_11
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 140
+        width: 148
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cbe9aeeb2cbf0a20800000000000000
+      internalID: 3030847971117362121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_12
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 138
+        width: 132
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10f05fa20a46b7df0800000000000000
+      internalID: -181440720900124927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_13
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 82
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e266f34af0301eef0800000000000000
+      internalID: -80779952600947154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3b0effd3023408b45b6272999e22bce9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_0: 2693739628464077416
+      ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_1: 7246192066643238427
+      ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_10: -6917763036479302863
+      ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_11: 3030847971117362121
+      ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_12: -181440720900124927
+      ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_13: -80779952600947154
+      ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_2: 626988727054777159
+      ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_3: -8932847768638942086
+      ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_4: -116608160656291200
+      ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_5: -1829299013983100464
+      ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_6: 7198648528044077444
+      ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_7: 5864525715171723077
+      ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_8: 6348595515941280332
+      ROCKY - GROOFO GOON ( CLONE ni GOOMBA )_9: 2512042599457750501
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -7,6 +7,12 @@ public class PlayerMovement : MonoBehaviour
     public float runSpeed = 9f;
     public float jumpForce = 12f;
 
+    [Header("Jump Feel")]
+    public float fallMultiplier = 2.5f;
+    public float lowJumpMultiplier = 2f;
+    public float jumpBufferTime = 0.15f;
+    public float coyoteTime = 0.1f;
+
     [Header("Ground Check")]
     public Transform groundCheck;
     public float groundCheckRadius = 0.25f;
@@ -16,10 +22,15 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded;
     private float moveInput;
     private bool isRunning;
+    private PlayerState playerState;
+
+    private float jumpBufferCounter;
+    private float coyoteTimeCounter;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        playerState = GetComponent<PlayerState>();
     }
 
     void Update()
@@ -29,18 +40,34 @@ public class PlayerMovement : MonoBehaviour
         moveInput = Input.GetAxisRaw("Horizontal");
         isRunning = Input.GetKey(KeyCode.LeftShift);
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (isGrounded)
+            coyoteTimeCounter = coyoteTime;
+        else
+            coyoteTimeCounter -= Time.deltaTime;
+
+        if (Input.GetButtonDown("Jump"))
+            jumpBufferCounter = jumpBufferTime;
+        else
+            jumpBufferCounter -= Time.deltaTime;
+
+        if (jumpBufferCounter > 0f && coyoteTimeCounter > 0f)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            jumpBufferCounter = 0f;
+            coyoteTimeCounter = 0f;
+        }
+
+        if (Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0f)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
+            coyoteTimeCounter = 0f;
         }
 
         Vector3 scale = transform.localScale;
-
         if (moveInput > 0)
             scale.x = Mathf.Abs(scale.x);
         else if (moveInput < 0)
             scale.x = -Mathf.Abs(scale.x);
-
         transform.localScale = scale;
     }
 
@@ -48,6 +75,11 @@ public class PlayerMovement : MonoBehaviour
     {
         float speed = isRunning ? runSpeed : walkSpeed;
         rb.linearVelocity = new Vector2(moveInput * speed, rb.linearVelocity.y);
+
+        if (rb.linearVelocity.y < 0)
+            rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.fixedDeltaTime;
+        else if (rb.linearVelocity.y > 0 && !Input.GetButton("Jump"))
+            rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.fixedDeltaTime;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -57,6 +89,12 @@ public class PlayerMovement : MonoBehaviour
             if (collision.contacts[0].normal.y > 0.5f)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce * 0.8f);
+                collision.gameObject.SendMessage("OnStomp", SendMessageOptions.DontRequireReceiver);
+            }
+            else
+            {
+                if (playerState != null)
+                    playerState.TakeDamage();
             }
         }
     }

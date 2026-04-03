@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI timerText;
     public GameObject winPanel;
     public GameObject gameOverPanel;
+    public GameObject pausePanel;
 
     [Header("Timer")]
     public float timeLimit = 300f;
@@ -18,6 +19,10 @@ public class GameManager : MonoBehaviour
 
     private int coinCount = 0;
     private PlayerMovement player;
+    private bool isPaused = false;
+
+    [Header("Scenes")]
+    public string mainMenuSceneName = "MainMenu";
 
     void Start()
     {
@@ -28,11 +33,26 @@ public class GameManager : MonoBehaviour
 
         if (winPanel != null) winPanel.SetActive(false);
         if (gameOverPanel != null) gameOverPanel.SetActive(false);
+        if (pausePanel != null) pausePanel.SetActive(false);
     }
 
     void Update()
     {
         if (isGameOver) return;
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (isPaused) Resume();
+            else Pause();
+        }
+
+        if (isPaused) return;
+
+        if (player == null)
+        {
+            StartCoroutine(GameOver());
+            return;
+        }
 
         UpdateTimer();
         UpdateUI();
@@ -67,6 +87,26 @@ public class GameManager : MonoBehaviour
         coinCount++;
     }
 
+    public void Pause()
+    {
+        if (isGameOver) return;
+
+        isPaused = true;
+        Time.timeScale = 0f;
+
+        if (pausePanel != null) pausePanel.SetActive(true);
+        if (player != null) player.enabled = false;
+    }
+
+    public void Resume()
+    {
+        isPaused = false;
+        Time.timeScale = 1f;
+
+        if (pausePanel != null) pausePanel.SetActive(false);
+        if (player != null) player.enabled = true;
+    }
+
     public IEnumerator GameOver()
     {
         isGameOver = true;
@@ -96,9 +136,16 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Debug.Log("Scene Reloaded");
     }
 
     public void NextLevel(string sceneName)
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(sceneName);
+    }
+
+    public void backToMenu(string sceneName)
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(sceneName);

@@ -42,7 +42,7 @@ public class Pipe : MonoBehaviour
             pm.enabled = false;
 
         Vector3 startPos = player.position;
-        Vector3 targetPos = startPos + Vector3.down * 0.5f;
+        Vector3 targetPos = startPos + Vector3.down * 1.5f;
 
         float t = 0f;
         while (t < slideDuration)
@@ -55,9 +55,21 @@ public class Pipe : MonoBehaviour
 
         yield return Fade(0f, 1f);
 
+        // Teleport to exit
         player.position = exitPoint.position;
 
-        yield return new WaitForSeconds(0.05f);
+        // Reuse variables (NO redeclaration)
+        startPos = player.position;
+        targetPos = startPos + Vector3.up * 1.5f;
+
+        t = 0f;
+        while (t < slideDuration)
+        {
+            t += Time.deltaTime;
+            float p = t / slideDuration;
+            player.position = Vector3.Lerp(startPos, targetPos, p);
+            yield return null;
+        }
 
         yield return Fade(1f, 0f);
 

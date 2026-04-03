@@ -4,10 +4,6 @@ public class Mushroom : MonoBehaviour
 {
     public float speed = 2f;
 
-    [Header("Player Scale States")]
-    public Vector3 smallScale = new Vector3(1f, 1f, 1f);
-    public Vector3 bigScale = new Vector3(1.5f, 1.5f, 1f);
-
     [Header("Movement")]
     public Transform wallCheck;
     public float wallCheckDistance = 0.1f;
@@ -57,15 +53,12 @@ public class Mushroom : MonoBehaviour
 
         if (collision.CompareTag("Player"))
         {
-            Transform player = collision.transform;
+            PlayerState ps = collision.GetComponent<PlayerState>();
 
-            if (Vector3.Distance(player.localScale, smallScale) < 0.01f)
+            // Fixed: use isBig bool instead of unreliable scale comparison
+            if (ps != null && !ps.isBig)
             {
-                PlayerState ps = collision.GetComponent<PlayerState>();
-                if (ps != null)
-                {
-                    ps.Grow();
-                }
+                ps.Grow();
             }
 
             collected = true;

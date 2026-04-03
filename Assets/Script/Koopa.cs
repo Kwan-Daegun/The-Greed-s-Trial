@@ -132,7 +132,7 @@ public class Koopa : MonoBehaviour
     void Flip()
     {
         if (sr != null)
-            sr.flipX = direction > 0;
+            sr.flipX = direction < 0;
 
         wallCheck.localPosition = new Vector3(
             wallCheckStartPos.x * direction,
