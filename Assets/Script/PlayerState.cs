@@ -11,12 +11,25 @@ public class PlayerState : MonoBehaviour
     public float growDuration = 0.2f;
     public float invincibleTime = 1f;
 
+    [Header("Star")]
+    public float starDuration = 10f;
+    public float flashSpeed = 0.08f;
+
     private bool isDead = false;
     private bool isInvincible = false;
 
     public bool isBig = false;
     private bool isGrowing = false;
     private bool isShrinking = false;
+
+    public bool hasStarPower = false;
+    private SpriteRenderer sr;
+    private Coroutine starCoroutine;
+
+    void Awake()
+    {
+        sr = GetComponent<SpriteRenderer>();
+    }
 
     public void Grow()
     {
@@ -50,7 +63,7 @@ public class PlayerState : MonoBehaviour
 
     public void TakeDamage()
     {
-        if (isDead || isInvincible) return;
+        if (isDead || isInvincible || hasStarPower) return;
 
         if (isBig)
             StartCoroutine(ShrinkRoutine());
@@ -86,24 +99,68 @@ public class PlayerState : MonoBehaviour
         isInvincible = false;
     }
 
-    public void Die()
-{
-    if (isDead) return;
-    isDead = true;
-
-    PlayerMovement pm = GetComponent<PlayerMovement>();
-    Rigidbody2D rb = GetComponent<Rigidbody2D>();
-
-    if (pm != null) pm.enabled = false;
-
-    if (rb != null)
+    public void ActivateStar()
     {
-        rb.linearVelocity = Vector2.zero;
-        rb.gravityScale = 0f;
-        rb.linearVelocity = new Vector2(0, 8f);
-        rb.gravityScale = 1f;
+        if (starCoroutine != null)
+            StopCoroutine(starCoroutine);
+        starCoroutine = StartCoroutine(StarRoutine());
     }
 
-    Destroy(gameObject, 0.8f);
-}
+    IEnumerator StarRoutine()
+    {
+        hasStarPower = true;
+        isInvincible = true;
+
+        Color[] rainbowColors = new Color[]
+        {
+            Color.red,
+            new Color(1f, 0.5f, 0f),
+            Color.yellow,
+            Color.green,
+            Color.cyan,
+            Color.blue,
+            Color.magenta
+        };
+
+        float elapsed = 0f;
+        int colorIndex = 0;
+
+        while (elapsed < starDuration)
+        {
+            if (sr != null)
+            {
+                sr.color = rainbowColors[colorIndex % rainbowColors.Length];
+                colorIndex++;
+            }
+
+            yield return new WaitForSeconds(flashSpeed);
+            elapsed += flashSpeed;
+        }
+
+        if (sr != null) sr.color = Color.white;
+        hasStarPower = false;
+        isInvincible = false;
+        starCoroutine = null;
+    }
+
+    public void Die()
+    {
+        if (isDead) return;
+        isDead = true;
+
+        PlayerMovement pm = GetComponent<PlayerMovement>();
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+
+        if (pm != null) pm.enabled = false;
+
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+            rb.gravityScale = 0f;
+            rb.linearVelocity = new Vector2(0, 8f);
+            rb.gravityScale = 1f;
+        }
+
+        Destroy(gameObject, 0.8f);
+    }
 }

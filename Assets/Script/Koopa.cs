@@ -18,6 +18,7 @@ public class Koopa : MonoBehaviour
     public bool isMovingShell = false;
 
     private Vector3 wallCheckStartPos;
+    private float wallFlipCooldown = 0f;
 
     void Awake()
     {
@@ -34,6 +35,8 @@ public class Koopa : MonoBehaviour
 
     void Update()
     {
+        wallFlipCooldown -= Time.deltaTime;
+
         RaycastHit2D hit = Physics2D.Raycast(
             wallCheck.position,
             Vector2.right * direction,
@@ -41,9 +44,10 @@ public class Koopa : MonoBehaviour
             groundLayer
         );
 
-        if (hit.collider != null)
+        if (hit.collider != null && wallFlipCooldown <= 0f)
         {
             direction *= -1;
+            wallFlipCooldown = 0.2f;
 
             if (!inShell)
                 rb.linearVelocity = new Vector2(direction * walkSpeed, rb.linearVelocity.y);
@@ -67,6 +71,14 @@ public class Koopa : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            PlayerState ps = collision.gameObject.GetComponent<PlayerState>();
+
+            if (ps != null && ps.hasStarPower)
+            {
+                Destroy(gameObject);
+                return;
+            }
+
             if (collision.relativeVelocity.y < -0.5f)
             {
                 if (!inShell)
@@ -78,7 +90,6 @@ public class Koopa : MonoBehaviour
             }
             else
             {
-                PlayerState ps = collision.gameObject.GetComponent<PlayerState>();
                 if (ps != null)
                 {
                     ps.TakeDamage();

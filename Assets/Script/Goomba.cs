@@ -48,20 +48,18 @@ public class Goomba : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            // If player lands on top, Goomba dies
-            if (collision.contacts[0].normal.y < -0.5f)
+            PlayerState ps = collision.gameObject.GetComponent<PlayerState>();
+
+            if (ps != null && ps.hasStarPower)
             {
                 GetComponent<GoombaAnimation>()?.Die();
+                return;
             }
+
+            if (collision.contacts[0].normal.y < -0.5f)
+                GetComponent<GoombaAnimation>()?.Die();
             else
-            {
-                // Hurt player
-                PlayerState ps = collision.gameObject.GetComponent<PlayerState>();
-                if (ps != null)
-                {
-                    ps.TakeDamage();
-                }
-            }
+                ps?.TakeDamage();
         }
 
         if (collision.gameObject.CompareTag("Enemy"))
@@ -71,33 +69,31 @@ public class Goomba : MonoBehaviour
         }
     }
 
-    // ADD THIS NEW METHOD:
     void OnCollisionStay2D(Collision2D collision)
     {
-        // As long as the Goomba is touching the player, keep trying to damage them!
-        // This fixes the bug where invincibility wears off but they stay stuck together.
         if (collision.gameObject.CompareTag("Player"))
         {
             if (collision.contacts[0].normal.y >= -0.5f)
             {
                 PlayerState ps = collision.gameObject.GetComponent<PlayerState>();
                 if (ps != null)
-                {
                     ps.TakeDamage();
-                }
             }
         }
-        
-        // Failsafe for stuck enemies: if they stay overlapping, force them to flip away
+
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            // Only flip if they are moving in the same direction to prevent rapid jittering
             if (Mathf.Sign(rb.linearVelocity.x) == Mathf.Sign(collision.relativeVelocity.x))
             {
                 currentDirection *= -1f;
                 Flip();
             }
         }
+    }
+
+    void OnStomp()
+    {
+        GetComponent<GoombaAnimation>()?.Die();
     }
 
     void Flip()

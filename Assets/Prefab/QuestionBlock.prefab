@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4762254418029129287}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 3768997087766812350}
   - component: {fileID: 7097362510188810446}
   - component: {fileID: 4082131198607532670}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: QuestionBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}

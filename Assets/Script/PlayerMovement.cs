@@ -94,7 +94,12 @@ public class PlayerMovement : MonoBehaviour
             else
             {
                 if (playerState != null)
-                    playerState.TakeDamage();
+                {
+                    if (playerState.hasStarPower)
+                        collision.gameObject.SendMessage("OnStomp", SendMessageOptions.DontRequireReceiver);
+                    else
+                        playerState.TakeDamage();
+                }
             }
         }
     }

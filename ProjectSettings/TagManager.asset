@@ -11,6 +11,9 @@ TagManager:
   - MovingPlatform
   - CheckPoint
   - Enemy
+  - ExitPipe
+  - Fade
+  - House
   layers:
   - Default
   - TransparentFX

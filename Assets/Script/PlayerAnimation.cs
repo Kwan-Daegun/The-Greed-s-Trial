@@ -8,14 +8,14 @@ public class PlayerAnimation : MonoBehaviour
     private Rigidbody2D rb;
     private PlayerMovement movement;
 
-    [Header("Animation Frames")]
     public Sprite[] idleFrames;
     public Sprite[] runFrames;
     public Sprite[] jumpFrames;
     public Sprite[] fallFrames;
 
-    [Header("Settings")]
     public float frameRate = 10f;
+
+    [HideInInspector] public bool forceRun = false;
 
     private Sprite[] currentFrames;
     private int frameIndex;
@@ -39,7 +39,6 @@ public class PlayerAnimation : MonoBehaviour
         float xVel = rb.linearVelocity.x;
         float yVel = rb.linearVelocity.y;
 
-        
         Sprite[] targetFrames;
 
         if (!isGrounded)
@@ -48,10 +47,9 @@ public class PlayerAnimation : MonoBehaviour
         }
         else
         {
-            targetFrames = Mathf.Abs(xVel) > 0.1f ? runFrames : idleFrames;
+            targetFrames = (Mathf.Abs(xVel) > 0.1f || forceRun) ? runFrames : idleFrames;
         }
 
-        // If animation changed → reset
         if (currentFrames != targetFrames)
         {
             currentFrames = targetFrames;

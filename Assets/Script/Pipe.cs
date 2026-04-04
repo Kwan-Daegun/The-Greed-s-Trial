@@ -15,6 +15,23 @@ public class Pipe : MonoBehaviour
 
     private bool isTransitioning = false;
 
+    void Awake()
+    {
+        if (exitPoint == null)
+        {
+            GameObject obj = GameObject.FindGameObjectWithTag("ExitPipe");
+            if (obj != null)
+                exitPoint = obj.transform;
+        }
+
+        if (fadeImage == null)
+        {
+            GameObject obj = GameObject.FindGameObjectWithTag("Fade");
+            if (obj != null)
+                fadeImage = obj.GetComponent<Image>();
+        }
+    }
+
     void OnTriggerStay2D(Collider2D collision)
     {
         if (isTransitioning) return;
@@ -55,10 +72,8 @@ public class Pipe : MonoBehaviour
 
         yield return Fade(0f, 1f);
 
-        // Teleport to exit
         player.position = exitPoint.position;
 
-        // Reuse variables (NO redeclaration)
         startPos = player.position;
         targetPos = startPos + Vector3.up * 1.5f;
 
