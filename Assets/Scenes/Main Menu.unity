@@ -7531,7 +7531,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The Greed's Trial
+  m_text: TITLE ANO NA
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c50330a6f6820024e8c3e0a9bc6e9f70, type: 2}
   m_sharedMaterial: {fileID: -8085023258276781483, guid: c50330a6f6820024e8c3e0a9bc6e9f70, type: 2}
