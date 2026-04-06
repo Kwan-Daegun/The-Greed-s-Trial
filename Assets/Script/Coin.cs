@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Coin : MonoBehaviour
@@ -12,14 +10,13 @@ public class Coin : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-
             if (coinSound != null)
                 AudioSource.PlayClipAtPoint(coinSound, transform.position, volume);
 
+            if (EffectsManager.Instance != null)
+                EffectsManager.Instance.CoinCollect(transform.position);
 
             FindObjectOfType<GameManager>().AddCoin();
-
-
             Destroy(gameObject);
         }
     }

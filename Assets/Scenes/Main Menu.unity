@@ -1750,9 +1750,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bgMusic: {fileID: 8300000, guid: ec509e2a14259c944bfde03a31bdeae3, type: 3}
+  hoverSound: {fileID: 0}
+  clickSound: {fileID: 0}
   volume: 1
+  playButton: {fileID: 1231774468}
   level2Button: {fileID: 1796229269}
   level3Button: {fileID: 293488083}
+  quitButton: {fileID: 167080379}
+  fadeOverlay: {fileID: 0}
 --- !u!4 &981148968
 Transform:
   m_ObjectHideFlags: 0

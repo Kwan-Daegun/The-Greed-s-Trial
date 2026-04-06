@@ -54,17 +54,19 @@ public class Koopa : MonoBehaviour
             else if (isMovingShell)
                 rb.linearVelocity = new Vector2(direction * shellSpeed, rb.linearVelocity.y);
 
+            if (isMovingShell && EffectsManager.Instance != null)
+            {
+                EffectsManager.Instance.DustPuff(transform.position);
+                EffectsManager.Instance.Shake(0.07f, 0.1f);
+            }
+
             Flip();
         }
 
         if (!inShell)
-        {
             rb.linearVelocity = new Vector2(direction * walkSpeed, rb.linearVelocity.y);
-        }
         else if (isMovingShell)
-        {
             rb.linearVelocity = new Vector2(direction * shellSpeed, rb.linearVelocity.y);
-        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -75,25 +77,21 @@ public class Koopa : MonoBehaviour
 
             if (ps != null && ps.hasStarPower)
             {
+                if (EffectsManager.Instance != null)
+                    EffectsManager.Instance.EnemyDie(transform.position);
                 Destroy(gameObject);
                 return;
             }
 
             if (collision.relativeVelocity.y < -0.5f)
             {
-                if (!inShell)
-                    EnterShell();
-                else if (!isMovingShell)
-                    KickShell(collision.transform);
-                else
-                    StopShell();
+                if (!inShell)           EnterShell();
+                else if (!isMovingShell) KickShell(collision.transform);
+                else                    StopShell();
             }
             else
             {
-                if (ps != null)
-                {
-                    ps.TakeDamage();
-                }
+                if (ps != null) ps.TakeDamage();
             }
         }
 
@@ -101,13 +99,14 @@ public class Koopa : MonoBehaviour
         {
             if (isMovingShell && collision.gameObject != gameObject)
             {
+                if (EffectsManager.Instance != null)
+                    EffectsManager.Instance.EnemyDie(collision.gameObject.transform.position);
                 Destroy(collision.gameObject);
             }
             else
             {
                 direction *= -1;
                 Flip();
-
                 if (!inShell)
                     rb.linearVelocity = new Vector2(direction * walkSpeed, rb.linearVelocity.y);
                 else if (isMovingShell)
@@ -121,30 +120,33 @@ public class Koopa : MonoBehaviour
         inShell = true;
         isMovingShell = false;
         rb.linearVelocity = Vector2.zero;
+        if (EffectsManager.Instance != null)
+            EffectsManager.Instance.DustPuff(transform.position);
     }
 
     void KickShell(Transform player)
     {
         isMovingShell = true;
-
         float dir = player.position.x < transform.position.x ? 1 : -1;
         direction = (int)dir;
-
         rb.linearVelocity = new Vector2(direction * shellSpeed, rb.linearVelocity.y);
         Flip();
+
+        if (EffectsManager.Instance != null)
+            EffectsManager.Instance.Shake(0.1f, 0.15f);
     }
 
     void StopShell()
     {
         isMovingShell = false;
         rb.linearVelocity = Vector2.zero;
+        if (EffectsManager.Instance != null)
+            EffectsManager.Instance.DustPuff(transform.position);
     }
 
     void Flip()
     {
-        if (sr != null)
-            sr.flipX = direction < 0;
-
+        if (sr != null) sr.flipX = direction < 0;
         wallCheck.localPosition = new Vector3(
             wallCheckStartPos.x * direction,
             wallCheckStartPos.y,
@@ -155,15 +157,9 @@ public class Koopa : MonoBehaviour
     void OnDrawGizmosSelected()
     {
         if (wallCheck == null) return;
-
         Gizmos.color = Color.cyan;
-
         float dir = Application.isPlaying ? direction : -1f;
-
-        Vector3 start = wallCheck.position;
-        Vector3 end = start + Vector3.right * dir * wallCheckDistance;
-
-        Gizmos.DrawLine(start, end);
-        Gizmos.DrawWireSphere(start, 0.05f);
+        Gizmos.DrawLine(wallCheck.position, wallCheck.position + Vector3.right * dir * wallCheckDistance);
+        Gizmos.DrawWireSphere(wallCheck.position, 0.05f);
     }
 }
