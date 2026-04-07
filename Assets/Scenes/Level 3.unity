@@ -8228,11 +8228,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3422b9bc41bd30746a357f3bad40deb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinText: {fileID: 0}
-  timerText: {fileID: 0}
-  winPanel: {fileID: 0}
-  gameOverPanel: {fileID: 0}
-  pausePanel: {fileID: 0}
+  coinText: {fileID: 722809802}
+  timerText: {fileID: 2132529538}
+  winPanel: {fileID: 337744481}
+  gameOverPanel: {fileID: 590051617}
+  pausePanel: {fileID: 918390947}
   flashOverlay: {fileID: 0}
   globalLight: {fileID: 0}
   deathLightIntensity: 0.01
