@@ -2369,7 +2369,7 @@ MonoBehaviour:
   jumpBufferTime: 0.15
   coyoteTime: 0.1
   groundCheck: {fileID: 305583962}
-  groundCheckRadius: 0.3
+  groundCheckRadius: 0.36
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
