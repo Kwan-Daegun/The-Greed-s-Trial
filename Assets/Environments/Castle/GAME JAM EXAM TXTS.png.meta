@@ -1,0 +1,426 @@
+fileFormatVersion: 2
+guid: e962136883827124fbba53a16d3fd985
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5469591358919216013
+    second: GAME JAM EXAM TXTS_0
+  - first:
+      213: -5391172643067106218
+    second: GAME JAM EXAM TXTS_1
+  - first:
+      213: -3184918638116747064
+    second: GAME JAM EXAM TXTS_2
+  - first:
+      213: 2162122047903656200
+    second: GAME JAM EXAM TXTS_3
+  - first:
+      213: 2515781325234428294
+    second: GAME JAM EXAM TXTS_4
+  - first:
+      213: 4490672289756006040
+    second: GAME JAM EXAM TXTS_5
+  - first:
+      213: 5890158400325030155
+    second: GAME JAM EXAM TXTS_6
+  - first:
+      213: -934384193355428747
+    second: GAME JAM EXAM TXTS_7
+  - first:
+      213: -22434429604159345
+    second: GAME JAM EXAM TXTS_8
+  - first:
+      213: -4055425078717846558
+    second: GAME JAM EXAM TXTS_9
+  - first:
+      213: -5754717232594164437
+    second: GAME JAM EXAM TXTS_10
+  - first:
+      213: -5715111297797674117
+    second: GAME JAM EXAM TXTS_11
+  - first:
+      213: 2767627968352180059
+    second: GAME JAM EXAM TXTS_12
+  - first:
+      213: 5831588262921620514
+    second: GAME JAM EXAM TXTS_13
+  - first:
+      213: -7919027397480909611
+    second: GAME JAM EXAM TXTS_14
+  - first:
+      213: -8446746245070340023
+    second: GAME JAM EXAM TXTS_15
+  - first:
+      213: -4339940553383568463
+    second: GAME JAM EXAM TXTS_16
+  - first:
+      213: 5920649678821825656
+    second: GAME JAM EXAM TXTS_17
+  - first:
+      213: -1909129871717007169
+    second: GAME JAM EXAM TXTS_18
+  - first:
+      213: -3915052361332304426
+    second: GAME JAM EXAM TXTS_19
+  - first:
+      213: 729411053342743299
+    second: GAME JAM EXAM TXTS_20
+  - first:
+      213: -5175452868389715902
+    second: GAME JAM EXAM TXTS_21
+  - first:
+      213: 2143043361987132530
+    second: GAME JAM EXAM TXTS_22
+  - first:
+      213: -6268381426674890548
+    second: GAME JAM EXAM TXTS_23
+  - first:
+      213: 7298252839973582706
+    second: GAME JAM EXAM TXTS_24
+  - first:
+      213: -5932441001169348972
+    second: GAME JAM EXAM TXTS_25
+  - first:
+      213: -1879847591430901298
+    second: GAME JAM EXAM TXTS_26
+  - first:
+      213: -7639956477282467135
+    second: GAME JAM EXAM TXTS_27
+  - first:
+      213: 452999923351429182
+    second: GAME JAM EXAM TXTS_28
+  - first:
+      213: 8706264017546088307
+    second: GAME JAM EXAM TXTS_29
+  - first:
+      213: -4081732869423497081
+    second: GAME JAM EXAM TXTS_30
+  - first:
+      213: -5942176251992965283
+    second: GAME JAM EXAM TXTS_31
+  - first:
+      213: 3432893667207273156
+    second: GAME JAM EXAM TXTS_32
+  - first:
+      213: -4462260537085469565
+    second: GAME JAM EXAM TXTS_33
+  - first:
+      213: 2920644745199082725
+    second: GAME JAM EXAM TXTS_34
+  - first:
+      213: 411078988293624576
+    second: GAME JAM EXAM TXTS_35
+  - first:
+      213: -3210421153732935634
+    second: GAME JAM EXAM TXTS_36
+  - first:
+      213: -8255907656784037335
+    second: GAME JAM EXAM TXTS_37
+  - first:
+      213: -4962299930608056272
+    second: GAME JAM EXAM TXTS_38
+  - first:
+      213: -5735953389379574927
+    second: GAME JAM EXAM TXTS_39
+  - first:
+      213: -7908571571206632932
+    second: GAME JAM EXAM TXTS_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GAME JAM EXAM TXTS_0
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 755
+        width: 1112
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 374f21163ab1814b0800000000000000
+      internalID: -5469591358919216013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME JAM EXAM TXTS_1
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 320
+        width: 761
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c6e277b05be25b0800000000000000
+      internalID: -5391172643067106218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME JAM EXAM TXTS_2
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 97
+        width: 211
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c8c7808f55ecc3d0800000000000000
+      internalID: -3184918638116747064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME JAM EXAM TXTS_3
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 104
+        width: 275
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80966521c86610e10800000000000000
+      internalID: 2162122047903656200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME JAM EXAM TXTS_9
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 539
+        width: 1330
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ebefc1a06c38b7c0800000000000000
+      internalID: -4055425078717846558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME JAM EXAM TXTS_20
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 333
+        width: 378
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30bdcb90d736f1a00800000000000000
+      internalID: 729411053342743299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3887a5e40035c8547982482e2edcef16
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GAME JAM EXAM TXTS_0: -5469591358919216013
+      GAME JAM EXAM TXTS_1: -5391172643067106218
+      GAME JAM EXAM TXTS_10: -5754717232594164437
+      GAME JAM EXAM TXTS_11: -5715111297797674117
+      GAME JAM EXAM TXTS_12: 2767627968352180059
+      GAME JAM EXAM TXTS_13: 5831588262921620514
+      GAME JAM EXAM TXTS_14: -7919027397480909611
+      GAME JAM EXAM TXTS_15: -8446746245070340023
+      GAME JAM EXAM TXTS_16: -4339940553383568463
+      GAME JAM EXAM TXTS_17: 5920649678821825656
+      GAME JAM EXAM TXTS_18: -1909129871717007169
+      GAME JAM EXAM TXTS_19: -3915052361332304426
+      GAME JAM EXAM TXTS_2: -3184918638116747064
+      GAME JAM EXAM TXTS_20: 729411053342743299
+      GAME JAM EXAM TXTS_21: -5175452868389715902
+      GAME JAM EXAM TXTS_22: 2143043361987132530
+      GAME JAM EXAM TXTS_23: -6268381426674890548
+      GAME JAM EXAM TXTS_24: 7298252839973582706
+      GAME JAM EXAM TXTS_25: -5932441001169348972
+      GAME JAM EXAM TXTS_26: -1879847591430901298
+      GAME JAM EXAM TXTS_27: -7639956477282467135
+      GAME JAM EXAM TXTS_28: 452999923351429182
+      GAME JAM EXAM TXTS_29: 8706264017546088307
+      GAME JAM EXAM TXTS_3: 2162122047903656200
+      GAME JAM EXAM TXTS_30: -4081732869423497081
+      GAME JAM EXAM TXTS_31: -5942176251992965283
+      GAME JAM EXAM TXTS_32: 3432893667207273156
+      GAME JAM EXAM TXTS_33: -4462260537085469565
+      GAME JAM EXAM TXTS_34: 2920644745199082725
+      GAME JAM EXAM TXTS_35: 411078988293624576
+      GAME JAM EXAM TXTS_36: -3210421153732935634
+      GAME JAM EXAM TXTS_37: -8255907656784037335
+      GAME JAM EXAM TXTS_38: -4962299930608056272
+      GAME JAM EXAM TXTS_39: -5735953389379574927
+      GAME JAM EXAM TXTS_4: 2515781325234428294
+      GAME JAM EXAM TXTS_40: -7908571571206632932
+      GAME JAM EXAM TXTS_5: 4490672289756006040
+      GAME JAM EXAM TXTS_6: 5890158400325030155
+      GAME JAM EXAM TXTS_7: -934384193355428747
+      GAME JAM EXAM TXTS_8: -22434429604159345
+      GAME JAM EXAM TXTS_9: -4055425078717846558
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

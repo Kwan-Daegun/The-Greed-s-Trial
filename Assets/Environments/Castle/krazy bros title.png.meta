@@ -1,0 +1,355 @@
+fileFormatVersion: 2
+guid: 84b5a5fb00d6c6e4c895ca3e25e60b4c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5467719783420636431
+    second: krazy bros title_0
+  - first:
+      213: 9047356546412805261
+    second: krazy bros title_1
+  - first:
+      213: 2703981577332025698
+    second: krazy bros title_2
+  - first:
+      213: 3386520970919373470
+    second: krazy bros title_3
+  - first:
+      213: 7101395961700713945
+    second: krazy bros title_4
+  - first:
+      213: 6176180197566888248
+    second: krazy bros title_5
+  - first:
+      213: -5256034910013230457
+    second: krazy bros title_6
+  - first:
+      213: 7923973407525730991
+    second: krazy bros title_7
+  - first:
+      213: 7642828900924231660
+    second: krazy bros title_8
+  - first:
+      213: 8168348781271514714
+    second: krazy bros title_9
+  - first:
+      213: 9176130866495873366
+    second: krazy bros title_10
+  - first:
+      213: 4692650138368164489
+    second: krazy bros title_11
+  - first:
+      213: -7765775854895873671
+    second: krazy bros title_12
+  - first:
+      213: 8333831458192219406
+    second: krazy bros title_13
+  - first:
+      213: 5876215591556929835
+    second: krazy bros title_14
+  - first:
+      213: -1442806768289015555
+    second: krazy bros title_15
+  - first:
+      213: -6600019472516724932
+    second: krazy bros title_16
+  - first:
+      213: -6412964572153127344
+    second: krazy bros title_17
+  - first:
+      213: -3537557258363312004
+    second: krazy bros title_18
+  - first:
+      213: -8354791872250529374
+    second: krazy bros title_19
+  - first:
+      213: 3215690782467379450
+    second: krazy bros title_20
+  - first:
+      213: -1607645783299342261
+    second: krazy bros title_21
+  - first:
+      213: 6135702433735531486
+    second: krazy bros title_22
+  - first:
+      213: -4942778136494066159
+    second: krazy bros title_23
+  - first:
+      213: 4548822286939066864
+    second: krazy bros title_24
+  - first:
+      213: -3430431765208745071
+    second: krazy bros title_25
+  - first:
+      213: -4608002285803092676
+    second: krazy bros title_26
+  - first:
+      213: -5221941645202947388
+    second: krazy bros title_27
+  - first:
+      213: -1157180630579580484
+    second: krazy bros title_28
+  - first:
+      213: 4979821857828230717
+    second: krazy bros title_29
+  - first:
+      213: -5866040774552268221
+    second: krazy bros title_30
+  - first:
+      213: 775795697840162081
+    second: krazy bros title_31
+  - first:
+      213: -3010697006668614083
+    second: krazy bros title_32
+  - first:
+      213: 1061525080675497921
+    second: krazy bros title_33
+  - first:
+      213: -652274119422645606
+    second: krazy bros title_34
+  - first:
+      213: 3982436860083258506
+    second: krazy bros title_35
+  - first:
+      213: -761639887196723940
+    second: krazy bros title_36
+  - first:
+      213: -2069532111531957747
+    second: krazy bros title_37
+  - first:
+      213: 3354149524719800147
+    second: krazy bros title_38
+  - first:
+      213: -2470835383920668441
+    second: krazy bros title_39
+  - first:
+      213: 5121493474390185898
+    second: krazy bros title_40
+  - first:
+      213: -1592766742931132606
+    second: krazy bros title_41
+  - first:
+      213: 5488233759255721434
+    second: krazy bros title_42
+  - first:
+      213: -6311283502062909967
+    second: krazy bros title_43
+  - first:
+      213: 8914987903645741930
+    second: krazy bros title_44
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: krazy bros title_0
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 811
+        width: 1707
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f256d183d1ce14b0800000000000000
+      internalID: -5467719783420636431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: krazy bros title_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 491
+        width: 2546
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8c7d3118daae8d70800000000000000
+      internalID: 9047356546412805261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ac8e96fbaf7c1b34f9f3af7b3a9c29fa
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      krazy bros title_0: -5467719783420636431
+      krazy bros title_1: 9047356546412805261
+      krazy bros title_10: 9176130866495873366
+      krazy bros title_11: 4692650138368164489
+      krazy bros title_12: -7765775854895873671
+      krazy bros title_13: 8333831458192219406
+      krazy bros title_14: 5876215591556929835
+      krazy bros title_15: -1442806768289015555
+      krazy bros title_16: -6600019472516724932
+      krazy bros title_17: -6412964572153127344
+      krazy bros title_18: -3537557258363312004
+      krazy bros title_19: -8354791872250529374
+      krazy bros title_2: 2703981577332025698
+      krazy bros title_20: 3215690782467379450
+      krazy bros title_21: -1607645783299342261
+      krazy bros title_22: 6135702433735531486
+      krazy bros title_23: -4942778136494066159
+      krazy bros title_24: 4548822286939066864
+      krazy bros title_25: -3430431765208745071
+      krazy bros title_26: -4608002285803092676
+      krazy bros title_27: -5221941645202947388
+      krazy bros title_28: -1157180630579580484
+      krazy bros title_29: 4979821857828230717
+      krazy bros title_3: 3386520970919373470
+      krazy bros title_30: -5866040774552268221
+      krazy bros title_31: 775795697840162081
+      krazy bros title_32: -3010697006668614083
+      krazy bros title_33: 1061525080675497921
+      krazy bros title_34: -652274119422645606
+      krazy bros title_35: 3982436860083258506
+      krazy bros title_36: -761639887196723940
+      krazy bros title_37: -2069532111531957747
+      krazy bros title_38: 3354149524719800147
+      krazy bros title_39: -2470835383920668441
+      krazy bros title_4: 7101395961700713945
+      krazy bros title_40: 5121493474390185898
+      krazy bros title_41: -1592766742931132606
+      krazy bros title_42: 5488233759255721434
+      krazy bros title_43: -6311283502062909967
+      krazy bros title_44: 8914987903645741930
+      krazy bros title_45: -1235539884
+      krazy bros title_5: 6176180197566888248
+      krazy bros title_6: -5256034910013230457
+      krazy bros title_7: 7923973407525730991
+      krazy bros title_8: 7642828900924231660
+      krazy bros title_9: 8168348781271514714
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -55,7 +55,7 @@ public class GoombaAnimation : MonoBehaviour
             if (isDead)
             {
                 frameIndex = currentFrames.Length - 1;
-                if (!deathFinished) { deathFinished = true; Destroy(gameObject, 0.1f); }
+                if (!deathFinished) { deathFinished = true; Destroy(gameObject, 0.8f); }
             }
             else frameIndex = 0;
         }
@@ -78,14 +78,23 @@ public class GoombaAnimation : MonoBehaviour
     IEnumerator SquashDeath()
     {
         Vector3 orig = transform.localScale;
-        Vector3 squash = new Vector3(orig.x * 1.6f, orig.y * 0.3f, orig.z);
+        Vector3 origPos = transform.position;
+        Vector3 squash = new Vector3(orig.x * 1.7f, orig.y * 0.5f, orig.z);
         float t = 0f;
         while (t < 1f)
         {
-            t += Time.deltaTime * 20f;
-            transform.localScale = Vector3.Lerp(orig, squash, Mathf.SmoothStep(0f, 1f, t));
+            t += Time.deltaTime * 0.5f;
+            float progress = Mathf.SmoothStep(0f, 1f, t);
+            transform.localScale = Vector3.Lerp(orig, squash, progress);
+            
+            // Adjust Y position to keep Goomba grounded as it squashes
+            float scaleProgress = Mathf.Lerp(orig.y, squash.y, progress);
+            float heightLost = orig.y - scaleProgress;
+            transform.position = origPos + Vector3.down * (heightLost / 0.5f);
+            
             yield return null;
         }
         transform.localScale = squash;
+        transform.position = origPos + Vector3.down * ((orig.y - squash.y) / 2f);
     }
 }

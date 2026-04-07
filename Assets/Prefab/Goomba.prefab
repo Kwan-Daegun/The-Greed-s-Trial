@@ -112,8 +112,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 8325784074346018290, guid: ec3644c011337e64a9921bf936103cb8, type: 3}
-  m_Color: {r: 0, g: 0.9339623, b: 0.53960806, a: 1}
+  m_Sprite: {fileID: 7246192066643238427, guid: de3adc803d941f94bb6627d1f8202b0a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -157,8 +157,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.07746506, y: 0.013129923}
-  m_Size: {x: 0.78453064, y: 0.855177}
+  m_Offset: {x: 0.022497177, y: 0.010089325}
+  m_Size: {x: 0.5846062, y: 0.7460368}
   m_Direction: 0
 --- !u!50 &4496462905901878181
 Rigidbody2D:
@@ -218,9 +218,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkFrames:
-  - {fileID: 8325784074346018290, guid: ec3644c011337e64a9921bf936103cb8, type: 3}
-  - {fileID: -2672410811292331566, guid: ec3644c011337e64a9921bf936103cb8, type: 3}
+  - {fileID: 7246192066643238427, guid: de3adc803d941f94bb6627d1f8202b0a, type: 3}
+  - {fileID: 626988727054777159, guid: de3adc803d941f94bb6627d1f8202b0a, type: 3}
   deadFrames:
-  - {fileID: 4642199160060471665, guid: ec3644c011337e64a9921bf936103cb8, type: 3}
+  - {fileID: 7198648528044077444, guid: de3adc803d941f94bb6627d1f8202b0a, type: 3}
   walkFrameRate: 4
   deadFrameRate: 6

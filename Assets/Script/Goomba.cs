@@ -106,7 +106,7 @@ public class Goomba : MonoBehaviour
             wallCheckStartPos.z
         );
 
-        GetComponent<SpriteRenderer>().flipX = currentDirection > 0;
+        GetComponent<SpriteRenderer>().flipX = currentDirection < 0;
     }
 
     void OnDrawGizmosSelected()
